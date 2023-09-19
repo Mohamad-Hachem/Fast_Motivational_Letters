@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Motivational letter Generator</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="wrapper">
+    <h1>Welcome to Fast Motivational Letters!!</h1>
+    <p>Creator: <a href="https://www.linkedin.com/in/hachemmohamad/"> Mohamad Hachem</a></p>
+    <form method="post">
+        {% if error %}
+        <div class="error">{{ error }}</div>
+        {% endif %}
+        Filename: <input type="text" name="filename"><br>
+        Text: <br><textarea name="text"></textarea><br>
+        Font Size:
+        <input type="number" name="fontsize" id="fontsize" min="8" max="48" step="1" value="12"><br>
+        <input type="submit" value="Generate PDF">
+    </form>
+</div>
+
+</body>
+</html>
