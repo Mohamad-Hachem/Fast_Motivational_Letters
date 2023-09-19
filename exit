@@ -1,0 +1,53 @@
+[1mdiff --git a/static/DataDog.pdf b/static/DataDog.pdf[m
+[1mdeleted file mode 100644[m
+[1mindex 29998fc..0000000[m
+[1m--- a/static/DataDog.pdf[m
+[1m+++ /dev/null[m
+[36m@@ -1,8 +0,0 @@[m
+[31m-My name is Mohamad,[m
+[31m-[m
+[31m-I would like you to know more[m
+[31m-about me,[m
+[31m-[m
+[31m-Best Regards,[m
+[31m-Mohamad[m
+[31m-[m
+[1mdiff --git a/static/virginie.pdf b/static/virginie.pdf[m
+[1mdeleted file mode 100644[m
+[1mindex 022af50..0000000[m
+[1m--- a/static/virginie.pdf[m
+[1m+++ /dev/null[m
+[36m@@ -1,33 +0,0 @@[m
+[31m-I am a dedicated software engineer with a strong academic[m
+[31m-background and practical experience, seeking opportunities in[m
+[31m-back-end and full-stack development roles.[m
+[31m-[m
+[31m-s Educational Background: I recently graduated with a Master's[m
+[31m-degree, where I consistently ranked among the top students in my[m
+[31m-program. My academic journey fortified my passion for technology[m
+[31m-and programming, which initially sparked in my early years during a[m
+[31m-coding competition.[m
+[31m-[m
+[31m-s Professional Experience: I have honed my skills in real-world[m
+[31m-settings through two impactful internships, where I developed[m
+[31m-software applications that positively influenced the lives of hundreds[m
+[31m-of people. I also took the lead on building my school's website from[m
+[31m-scratch, showcasing my ability to manage and deliver on complete[m
+[31m-projects.[m
+[31m-[m
+[31m-ss Technical Skills:[m
+[31m-[m
+[31m-Proficient in Python, JavaScript, and many more[m
+[31m-Capable of working in both back-end and full-stack roles[m
+[31m-[m
+[31m-s Continuous Learning: While I am proud of what I have achieved so[m
+[31m-far, I am fully aware that the tech industry is ever-evolving. I am[m
+[31m-committed to ongoing learning and looking for a challenging role to[m
+[31m-continue my growth.[m
+[31m-[m
+[31m-s Let's Connect: I'm always open to discussing career opportunities,[m
+[31m-potential collaborations, or even just to geek out about the latest tech[m
+[31m-trends. Feel free to reach out to me here on LinkedIn.[m
+[31m-[m
+[31m-Thank you for taking the time to read my profile.[m
+[31m-[m

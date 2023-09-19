@@ -3,9 +3,9 @@ from reportlab.lib.pagesizes import letter
 from reportlab.lib import colors
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.platypus import SimpleDocTemplate, Paragraph
+import io
 
 app = Flask(__name__)
-
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
@@ -18,11 +18,12 @@ def index():
         if not filename or not text:
             error = 'Both fields are required.'
         else:
-            pdf_path = f"static/{filename}.pdf"
+            # Create an in-memory buffer
+            buffer = io.BytesIO()
 
             # Create PDF
             pdf = SimpleDocTemplate(
-                pdf_path,
+                buffer,
                 pagesize=letter
             )
 
@@ -34,7 +35,7 @@ def index():
                 'CustomStyle',
                 parent=getSampleStyleSheet()['Normal'],
                 fontSize=fontsize,
-                leading=fontsize * 1.2,  # Line spacing
+                leading=fontsize * 1.2  # Line spacing
             )
 
             # Replace newline characters with line break tags
@@ -46,14 +47,17 @@ def index():
             # Build the PDF
             pdf.build(elements)
 
+            # Move buffer position to beginning
+            buffer.seek(0)
+
             return send_file(
-                pdf_path,
+                buffer,
                 as_attachment=True,
-                download_name=f"{filename}.pdf"
+                download_name=f"{filename}.pdf",
+                mimetype='application/pdf'
             )
 
     return render_template('index.html', error=error)
-
 
 if __name__ == '__main__':
     app.run(debug=True)
